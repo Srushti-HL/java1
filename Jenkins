@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                sh 'javac src/Srushti.java'
+                sh 'javac /java1/src/java1/Srushti.java'
             }
         }
         stage('Run') {
             steps {
-                sh 'java -cp Srushti'
+                sh 'java /java1/src/java1/Srushti'
             }
         }
     }
